@@ -155,7 +155,8 @@ function setContent(section) {
 function updateLanguageUI() {
   subtitle.textContent = texts[lang].subtitle;
   Object.keys(tabLabels).forEach(key => {
-    tabLabels[key].innerHTML = `${tabLabels[key].innerHTML.charAt(0)} ${texts[lang].tabs[key]}`;
+    // reemplazar el texto completamente (sin conservar emojis ni letras previas)
+    tabLabels[key].textContent = texts[lang].tabs[key];
   });
 }
 
