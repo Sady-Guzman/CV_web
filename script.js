@@ -38,6 +38,7 @@ const texts = {
       <p><strong>LinkedIn:</strong> linkedin.com/in/mi-perfil</p>
       <p><strong>Ubicación:</strong> La Serena, Chile</p>
       <p>Estudiante de último año en Ingeniería en Computación. Experiencia en proyectos web, liderazgo de equipos y despliegue en la nube.</p>
+      <a href="assets/SadyGuzman_CV_2025_esp.pdf" target="_blank" class="cv-button">📄 Descargar CV (PDF)</a>
     `,
     formacion: `
       <h2>Formación</h2>
@@ -101,6 +102,7 @@ const texts = {
       <p><strong>LinkedIn:</strong> linkedin.com/in/my-profile</p>
       <p><strong>Location:</strong> La Serena, Chile</p>
       <p>Final-year Computer Engineering student. Experienced in web projects, team leadership, and cloud deployment.</p>
+      <a href="assets/SadyGuzman_CV_2025_en.pdf" target="_blank" class="cv-button">📄 Download CV (PDF)</a>
     `,
     formacion: `
       <h2>Education</h2>
