@@ -204,8 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       contacto: `
         <h2>Contact</h2>
-        <p><strong>Phone:</strong> +56 9 (number)</p>
-        <p><strong>Email:</strong> professional@gmail.com</p>
+        <p><strong>Phone:</strong> +569 9128 9332</p>
+        <p><strong>Email:</strong> sady.guzman@userena.cl</p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
         <p><strong>Location:</strong>Chile</p>
 
