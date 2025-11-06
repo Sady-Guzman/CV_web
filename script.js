@@ -66,38 +66,55 @@ const texts = {
     experiencia: `
       <h2>Experiencia</h2>
       <ul>
-        <li><strong>Tutor de Ingeniería en Computación (2025)</strong><br>
-          Durante mi último año, me desempeñé como tutor de
+        <li>
+        <strong>Tutor de Ingeniería en Computación<br>  Universidad de La Serena (2025)</strong><br>
+        
+        Durante mi último año, me desempeñé como tutor de
           programación, apoyando a estudiantes de primer año
           en asignaturas de introducción a la programación, y a
-          estudiantes de segundo año en estructuras de datos.</li>
+          estudiantes de segundo año en estructuras de datos.
+        </li>
 
         <br><br>
-        <li><strong>Práctica Profesional - PREANSA CHILE UNACEM (2025) </strong><br>
+        <li>
+          <strong>Práctica Profesional<br>  PREANSA CHILE UNACEM (2025) </strong><br>
+          
           Desarrollo de una aplicación de escritorio utilizando
           Python, el framework PyQt y una base de datos SQLite,
           destinada a realizar cálculos de propiedades de piezas
-          de hormigón pretensado.</li>
+          de hormigón pretensado.
+        </li>
 
         <br><br>
-        <li><strong>Proyecto plataforma web escuela de Computación - Universidad de la Serena (2025)</strong><br>
+        <li>
+          <strong>Proyecto plataforma web escuela de Computación<br>  Universidad de la Serena (2025)</strong><br>
+          
           Me desempeñe como jefe de proyecto en desarrollo de
           plataforma web. Administré el desarrollo de equipos de
-          frontend, backend, base de datos, QA, y Devops.</li>
+          frontend, backend, base de datos, QA, y Devops.
+        </li>
         
         <br><br>
-        <li><strong>Proyecto de Depuración de marcajes RRHH MINSAL - Hospital de Coquimbo (2024)</strong><br>
+        <li>
+          <strong>Proyecto de Depuración de marcajes RRHH MINSAL<br>  Hospital de Coquimbo (2024)
+          </strong><br>
+          
           Encargado del levantamiento de requisitos, reuniones
           con cliente y gestión de proyecto, como también apoyo
           en etapas desarrollo. Abordamos tecnologías como
-          Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.</li>
+          Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.
+        </li>
 
         <br><br>
-        <li><strong>Proyecto de Sistema de préstamos de equipos musicales - Depto. de Música Universidad de La Serena (2023)</strong><br>
+        <li>
+          <strong>Proyecto de Sistema de préstamos de equipos musicales<br>  Depto. de Música Universidad de La Serena (2023)
+          </strong><br>
+          
           Levantamiento de requisitos en entrevistas con cliente.
-          Desarrollo de sistema informático de escritorio para
-          control de inventario, estado de los equipos, y préstamos
-          a estudiantes de carreras afines al departamento.</li>
+            Desarrollo de sistema informático de escritorio para
+            control de inventario, estado de los equipos, y préstamos
+            a estudiantes de carreras afines al departamento.
+        </li>
 
       </ul>
     `,
@@ -131,7 +148,7 @@ const texts = {
         <p>
         <strong>CS50: Foundations of Intellectual
           Enterprises of Computer Science and the
-          Art of Programming - (2024)</strong><br>
+          Art of Programming<br>  EdX | HarvardX (2024)</strong><br>
 
         Curso sobre estructuras de datos y algoritmos, bases
           de datos relacionales, en lenguajes C, Python, y SQL.
@@ -143,7 +160,7 @@ const texts = {
         <br><br>
         <p>
         <strong>EF: Standardized English Test Certificate
-          C2 Proficient - (2024)</strong><br>
+          C2 Proficient<br>  EF SET (2024)</strong><br>
 
         Alcanzado nivel C2 en el Marco Común Europeo de
           Referencia (MCER), lo que demuestra la capacidad
@@ -155,7 +172,7 @@ const texts = {
       <h2>Logros</h2>
       <p>
         <strong>Tercer lugar Hackathon: Crisis
-          Hídrica Región de Coquimbo - Universidad de La Serena (2024)</strong><br>
+          Hídrica Región de Coquimbo<br>  Universidad de La Serena (2024)</strong><br>
 
         Propuesta Hydrocare: Uso de IoT para monitorear
           plantaciones y modelo de inteligencia artificial para
@@ -165,7 +182,7 @@ const texts = {
       <br><br>
       <p>
         <strong>Puesto de exposición en Feria de
-          Innovación ULS. - Universidad de La Serena (2022)</strong><br>
+          Innovación ULS.<br>  Universidad de La Serena (2022)</strong><br>
 
         Uso de tecnologías Arduino junto con diseño e impresión
           3D para el desarrollo de prototipo de brazalete timbre.
