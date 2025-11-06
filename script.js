@@ -171,12 +171,16 @@ function switchLang(newLang) {
   setContent(activeTab.dataset.section);
 }
 
+// ---- EVENTOS ----
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     tabs.forEach((t) => t.classList.remove("active"));
     tab.classList.add("active");
     setContent(tab.dataset.section);
-    sidebar.classList.remove("open"); // cerrar sidebar en móvil
+
+    // cerrar sidebar en móvil
+    sidebar.classList.remove("open");
+    menuBtn.style.display = "block"; // volver a mostrar botón
   });
 });
 
@@ -185,6 +189,13 @@ btnEn.addEventListener("click", () => switchLang("en"));
 
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
+
+  // si el sidebar se abrió → ocultar botón
+  if (sidebar.classList.contains("open")) {
+    menuBtn.style.display = "none";
+  } else {
+    menuBtn.style.display = "block";
+  }
 });
 
 // ---- Inicialización ----
