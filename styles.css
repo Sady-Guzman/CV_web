@@ -8,18 +8,19 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden; /* evita que la página completa crezca */
+  overflow: hidden;
   background-color: #f4f5f7;
   color: #222;
 }
 
 .layout {
   display: flex;
-  height: 100vh; /* fuerza altura total de la ventana */
+  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 /* --- SIDEBAR --- */
@@ -30,7 +31,8 @@ html, body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0; /* ← evita que cambie de tamaño */
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 .name {
@@ -89,7 +91,7 @@ html, body {
 .content {
   flex-grow: 1;
   padding: 30px;
-  overflow-y: auto; /* scroll solo dentro del contenido */
+  overflow-y: auto;
 }
 
 .content h2 {
@@ -106,4 +108,49 @@ html, body {
 ul {
   list-style-type: disc;
   margin-left: 20px;
+}
+
+/* --- MENÚ MÓVIL --- */
+.menu-btn {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 6px 10px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 15;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .content {
+    padding: 80px 20px 20px 20px;
+  }
 }

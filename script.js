@@ -3,8 +3,9 @@ const tabs = document.querySelectorAll(".tab");
 const btnEs = document.getElementById("btn-es");
 const btnEn = document.getElementById("btn-en");
 const subtitle = document.getElementById("subtitle");
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menu-btn");
 
-// referencias a pestañas (para traducirlas)
 const tabLabels = {
   contacto: document.getElementById("tab-contacto"),
   formacion: document.getElementById("tab-formacion"),
@@ -12,7 +13,7 @@ const tabLabels = {
   proyectos: document.getElementById("tab-proyectos"),
   habilidades: document.getElementById("tab-habilidades"),
   certificaciones: document.getElementById("tab-certificaciones"),
-  logros: document.getElementById("tab-logros")
+  logros: document.getElementById("tab-logros"),
 };
 
 let lang = "es";
@@ -28,7 +29,7 @@ const texts = {
       proyectos: "Proyectos",
       habilidades: "Habilidades",
       certificaciones: "Certificaciones",
-      logros: "Logros"
+      logros: "Logros",
     },
     contacto: `
       <h2>Contacto</h2>
@@ -80,7 +81,7 @@ const texts = {
         <li>3er lugar — Hackathon Crisis Hídrica (Hydrocare, 2024)</li>
         <li>Expositor — Feria de Innovación ULS (2022)</li>
       </ul>
-    `
+    `,
   },
   en: {
     subtitle: "Computer Engineering Student",
@@ -91,7 +92,7 @@ const texts = {
       proyectos: "Projects",
       habilidades: "Skills",
       certificaciones: "Certifications",
-      logros: "Achievements"
+      logros: "Achievements",
     },
     contacto: `
       <h2>Contact</h2>
@@ -143,8 +144,8 @@ const texts = {
         <li>3rd Place — Water Crisis Hackathon (Hydrocare, 2024)</li>
         <li>Exhibitor — ULS Innovation Fair (2022)</li>
       </ul>
-    `
-  }
+    `,
+  },
 };
 
 // ---- FUNCIONES ----
@@ -154,8 +155,7 @@ function setContent(section) {
 
 function updateLanguageUI() {
   subtitle.textContent = texts[lang].subtitle;
-  Object.keys(tabLabels).forEach(key => {
-    // reemplazar el texto completamente (sin conservar emojis ni letras previas)
+  Object.keys(tabLabels).forEach((key) => {
     tabLabels[key].textContent = texts[lang].tabs[key];
   });
 }
@@ -169,17 +169,21 @@ function switchLang(newLang) {
   setContent(activeTab.dataset.section);
 }
 
-// ---- EVENTOS ----
-tabs.forEach(tab => {
+tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
+    tabs.forEach((t) => t.classList.remove("active"));
     tab.classList.add("active");
     setContent(tab.dataset.section);
+    sidebar.classList.remove("open"); // cerrar sidebar en móvil
   });
 });
 
 btnEs.addEventListener("click", () => switchLang("es"));
 btnEn.addEventListener("click", () => switchLang("en"));
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+});
 
 // ---- Inicialización ----
 updateLanguageUI();
