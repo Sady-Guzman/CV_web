@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Location:</strong>Chile</p>
 
         <p><strong>Profile:</strong> <br>Final-year Computer Engineering student, currently
-          completing degree requirements. Available to start
-          working from December 2025.</p>
+          completing degree requirements. <br>
+          Available to start working from December 2025.</p>
         
         
         <a href="assets/SadyGuzman_CV_2025_en.pdf" target="_blank" class="cv-button">📄 Download CV (PDF)</a>
