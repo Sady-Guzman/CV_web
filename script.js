@@ -1,3 +1,4 @@
+const overlay = document.getElementById("overlay");
 const content = document.getElementById("content");
 const tabs = document.querySelectorAll(".tab");
 const btnEs = document.getElementById("btn-es");
@@ -178,8 +179,9 @@ tabs.forEach((tab) => {
     tab.classList.add("active");
     setContent(tab.dataset.section);
 
-    // cerrar sidebar en móvil
+    // cerrar sidebar y overlay en móvil
     sidebar.classList.remove("open");
+    overlay.classList.remove("visible");
     menuBtn.style.display = "block"; // volver a mostrar botón
   });
 });
@@ -190,12 +192,20 @@ btnEn.addEventListener("click", () => switchLang("en"));
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
 
-  // si el sidebar se abrió → ocultar botón
   if (sidebar.classList.contains("open")) {
-    menuBtn.style.display = "none";
+    overlay.classList.add("visible");   // mostrar fondo oscuro
+    menuBtn.style.display = "none";     // ocultar botón hamburguesa
   } else {
+    overlay.classList.remove("visible"); // ocultar fondo
     menuBtn.style.display = "block";
   }
+});
+
+// Cerrar menú si se toca el overlay
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("open");
+  overlay.classList.remove("visible");
+  menuBtn.style.display = "block";
 });
 
 // ---- Inicialización ----
