@@ -2,12 +2,34 @@ const content = document.getElementById("content");
 const tabs = document.querySelectorAll(".tab");
 const btnEs = document.getElementById("btn-es");
 const btnEn = document.getElementById("btn-en");
+const subtitle = document.getElementById("subtitle");
+
+// referencias a pestañas (para traducirlas)
+const tabLabels = {
+  contacto: document.getElementById("tab-contacto"),
+  formacion: document.getElementById("tab-formacion"),
+  experiencia: document.getElementById("tab-experiencia"),
+  proyectos: document.getElementById("tab-proyectos"),
+  habilidades: document.getElementById("tab-habilidades"),
+  certificaciones: document.getElementById("tab-certificaciones"),
+  logros: document.getElementById("tab-logros")
+};
 
 let lang = "es";
 
 // ---- CONTENIDO ----
 const texts = {
   es: {
+    subtitle: "Estudiante de Ingeniería en Computación",
+    tabs: {
+      contacto: "Contacto",
+      formacion: "Formación",
+      experiencia: "Experiencia",
+      proyectos: "Proyectos",
+      habilidades: "Habilidades",
+      certificaciones: "Certificaciones",
+      logros: "Logros"
+    },
     contacto: `
       <h2>Contacto</h2>
       <p><strong>Teléfono:</strong> +56 9 (número)</p>
@@ -61,6 +83,16 @@ const texts = {
     `
   },
   en: {
+    subtitle: "Computer Engineering Student",
+    tabs: {
+      contacto: "Contact",
+      formacion: "Education",
+      experiencia: "Experience",
+      proyectos: "Projects",
+      habilidades: "Skills",
+      certificaciones: "Certifications",
+      logros: "Achievements"
+    },
     contacto: `
       <h2>Contact</h2>
       <p><strong>Phone:</strong> +56 9 (number)</p>
@@ -120,12 +152,18 @@ function setContent(section) {
   content.innerHTML = texts[lang][section];
 }
 
+function updateLanguageUI() {
+  subtitle.textContent = texts[lang].subtitle;
+  Object.keys(tabLabels).forEach(key => {
+    tabLabels[key].innerHTML = `${tabLabels[key].innerHTML.charAt(0)} ${texts[lang].tabs[key]}`;
+  });
+}
+
 function switchLang(newLang) {
   lang = newLang;
   btnEs.classList.toggle("active", lang === "es");
   btnEn.classList.toggle("active", lang === "en");
-
-  // refresca el contenido actual
+  updateLanguageUI();
   const activeTab = document.querySelector(".tab.active");
   setContent(activeTab.dataset.section);
 }
@@ -143,4 +181,5 @@ btnEs.addEventListener("click", () => switchLang("es"));
 btnEn.addEventListener("click", () => switchLang("en"));
 
 // ---- Inicialización ----
+updateLanguageUI();
 setContent("contacto");
