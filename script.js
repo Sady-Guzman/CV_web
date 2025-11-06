@@ -37,6 +37,7 @@ const texts = {
       <p><strong>Teléfono:</strong> +569 9128 9332</p>
       <p><strong>Email:</strong> sady.guzman@userena.cl</p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
+      <p><strong>Idiomas:</strong> Español, Ingles C2</p>
 
       <p><strong>Perfil:</strong> <br>Estudiante de quinto año, con perfil de egreso.<br>
         Cuento con disponibilidad para incorporarme al trabajo
@@ -71,60 +72,104 @@ const texts = {
           en asignaturas de introducción a la programación, y a
           estudiantes de segundo año en estructuras de datos.</li>
 
+        <br><br>
         <li><strong>Práctica Profesional - PREANSA CHILE UNACEM (2025) </strong><br>
           Desarrollo de una aplicación de escritorio utilizando
           Python, el framework PyQt y una base de datos SQLite,
           destinada a realizar cálculos de propiedades de piezas
           de hormigón pretensado.</li>
 
+        <br><br>
         <li><strong>Proyecto plataforma web escuela de Computación - Universidad de la Serena (2025)</strong><br>
           Me desempeñe como jefe de proyecto en desarrollo de
           plataforma web. Administré el desarrollo de equipos de
           frontend, backend, base de datos, QA, y Devops.</li>
         
+        <br><br>
         <li><strong>Proyecto de Depuración de marcajes RRHH MINSAL - Hospital de Coquimbo (2024)</strong><br>
           Encargado del levantamiento de requisitos, reuniones
           con cliente y gestión de proyecto, como también apoyo
           en etapas desarrollo. Abordamos tecnologías como
           Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.</li>
 
-        <li><strong>Proyecto de Sistema de préstamos de equipos musicales - Universidad de La Serena (2023)</strong><br>
-          Encargado del levantamiento de requisitos, reuniones
-          con cliente y gestión de proyecto, como también apoyo
-          en etapas desarrollo. Abordamos tecnologías como
-          Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.</li>
+        <br><br>
+        <li><strong>Proyecto de Sistema de préstamos de equipos musicales - Depto. de Música Universidad de La Serena (2023)</strong><br>
+          Levantamiento de requisitos en entrevistas con cliente.
+          Desarrollo de sistema informático de escritorio para
+          control de inventario, estado de los equipos, y préstamos
+          a estudiantes de carreras afines al departamento.</li>
 
       </ul>
     `,
     proyectos: `
       <h2>Proyectos</h2>
       <ul>
-        <li>Aplicación de cálculo de pretensado — Python, PyQt, SQLite</li>
-        <li>Plataforma web Flask — Docker, PostgreSQL</li>
+        <li> bbb </li>
+        <li> aaa</li>
       </ul>
     `,
     habilidades: `
-      <h2>Habilidades Técnicas</h2>
+      <h2>Tecnologías y Herramientas</h2>
       <ul>
-        <li>Lenguajes: C, Java, Python</li>
-        <li>Bases de datos: PostgreSQL, MongoDB</li>
-        <li>Despliegue: Docker, Vercel, AWS</li>
-        <li>Data Science: Pandas, NumPy, Scikit-Learn</li>
+        <li><b>Lenguajes:</b> C, Java, Python</li>
+        <li><b>Bases de datos:</b> PostgreSQL, MongoDB</li>
+        <li><b>Desarrollo web:</b> HTML, CSS, JS, Flask framework</li>
+        <li><b>Control de versiones:</b> Git, Github, Github Integrations</li>
+        <li><b>Despliegue y hosting:</b> Vercel, NeonDB, AWS</li>
+        <li><b>Contenerización:</b> Docker</li>
+        <li><b>Sistemas operativos:</b> Windows, MacOS, Linux</li>
+        <li><b>Gestión de proyectos:</b> Atlassian Jira</li>
+        <li><b>Análisis y visualización de datos con Machine Learning:</b> 
+          Jupyter Notebooks y Google Colab para exploración,
+          limpieza, manipulación y visualización de datasets usando:
+          Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn.</li>
+
       </ul>
     `,
     certificaciones: `
       <h2>Certificaciones</h2>
-      <ul>
-        <li>CS50x — HarvardX (2024)</li>
-        <li>EF SET — C2 Proficient (2024)</li>
-      </ul>
+        <p>
+        <strong>CS50: Foundations of Intellectual
+          Enterprises of Computer Science and the
+          Art of Programming - (2024)</strong><br>
+
+        Curso sobre estructuras de datos y algoritmos, bases
+          de datos relacionales, en lenguajes C, Python, y SQL.
+          Incluye desarrollo web con frameworks Bootstrap y
+          Flask. <br> Proyecto final: Extensión para navegador Google
+          Chrome.
+        </p>
+
+        <br><br>
+        <p>
+        <strong>EF: Standardized English Test Certificate
+          C2 Proficient - (2024)</strong><br>
+
+        Alcanzado nivel C2 en el Marco Común Europeo de
+          Referencia (MCER), lo que demuestra la capacidad
+          para comunicarse de manera efectiva y fluida en inglés
+          en una amplia variedad de contextos.
+        </p>
     `,
     logros: `
       <h2>Logros</h2>
-      <ul>
-        <li>3er lugar — Hackathon Crisis Hídrica (Hydrocare, 2024)</li>
-        <li>Expositor — Feria de Innovación ULS (2022)</li>
-      </ul>
+      <p>
+        <strong>Tercer lugar Hackathon: Crisis
+          Hídrica Región de Coquimbo - Universidad de La Serena (2024)</strong><br>
+
+        Propuesta Hydrocare: Uso de IoT para monitorear
+          plantaciones y modelo de inteligencia artificial para
+          reconocer plantas con problemas de plagas.
+        </p>
+
+      <br><br>
+      <p>
+        <strong>Puesto de exposición en Feria de
+          Innovación ULS. - Universidad de La Serena (2022)</strong><br>
+
+        Uso de tecnologías Arduino junto con diseño e impresión
+          3D para el desarrollo de prototipo de brazalete timbre.
+      </p>
     `,
   },
   en: {
