@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `,
       formacion: `
         <h2>Formación</h2>
-        <p><strong>Ingeniería en Computación</strong> – Universidad de La Serena (2020 - 2025)</p>
+        <p><strong>Ingeniería en Computación</strong><br>  Universidad de La Serena (2020 - 2025)</p>
         <p>Durante los primeros semestres el enfoque estuvo en los
           fundamentos de la ciencia de la computación, usando
           lenguaje C para entender en profundidad la lógica,
@@ -206,53 +206,158 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>Contact</h2>
         <p><strong>Phone:</strong> +56 9 (number)</p>
         <p><strong>Email:</strong> professional@gmail.com</p>
-        <p><strong>LinkedIn:</strong> linkedin.com/in/my-profile</p>
-        <p><strong>Location:</strong> La Serena, Chile</p>
-        <p>Final-year Computer Engineering student. Experienced in web projects, team leadership, and cloud deployment.</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
+        <p><strong>Location:</strong>Chile</p>
+
+        <p><strong>Profile:</strong> <br>Final-year Computer Engineering student, currently
+          completing degree requirements. Available to start
+          working from December 2025.</p>
+        
+        
         <a href="assets/SadyGuzman_CV_2025_en.pdf" target="_blank" class="cv-button">📄 Download CV (PDF)</a>
       `,
       formacion: `
         <h2>Education</h2>
-        <p><strong>Bachelor's in Computer Engineering</strong> – University of La Serena (2020 - 2025)</p>
-        <p>Focus on backend development, data structures, project management, and technical leadership.</p>
+        <p><strong>Ingeniería en Computación<br>  Universidad de La Serena (2020 - 2025)</strong></p>
+        <p>
+          During the first semesters, the focus was on the
+          fundamentals of computer science, using the C
+          programming language to deeply understand logic, data
+          structures, and algorithm design. Later, emphasizing the
+          development of semester-long projects.<br><br>
+
+          In the final years, I took on the role of project leader in
+          several semester-projects, managing teams, gathering
+          requirements, interviewing clients, and overseeing the
+          planning and execution of the development stages.
+        </p>
       `,
       experiencia: `
         <h2>Experience</h2>
         <ul>
-          <li><strong>Internship – PREANSA CHILE UNACEM (2025)</strong><br>Built a desktop app in Python/PyQt with SQLite.</li>
-          <li><strong>HR Data Cleaning Project – Coquimbo Hospital (2024)</strong><br>Led analysis and backend development using Flask and Docker.</li>
-          <li><strong>Programming Tutor – ULS (2025)</strong><br>Assisted students with programming and data structures.</li>
+          <li>
+          <strong>Computer Science Tutor<br>  La Serena University (2025)</strong><br>
+          
+          During my final year, I worked as a Tutor, helping
+            students strengthen their understanding of
+            programming fundamentals and data structures
+            through practical guidance and mentoring.
+          </li>
+
+          <br><br>
+          <li>
+            <strong>Profesional Internship<br>  PREANSA CHILE UNACEM (2025) </strong><br>
+            
+            Developed a desktop application using Python, the PyQt
+              framework, and an SQLite database, designed to
+              automate engineering calculations for prestressed
+              concrete components.
+          </li>
+
+          <br><br>
+          <li>
+            <strong>Computer Science Department Platform Project<br>  La Serena University (2025)</strong><br>
+            
+            Served as Project Leader in the development of a web
+              platform. Managed the work of frontend, backend,
+              database, QA, and DevOps teams, overseeing
+              coordination, progress tracking, and integration across
+              all development areas as well as maintaining
+              communication with the client.
+          </li>
+          
+          <br><br>
+          <li>
+            <strong>HR Attendance Data Cleaning Project<br>  Coquimbo Hospital (2024)
+            </strong><br>
+            
+            Served as Project Leader, overseeing requirements
+              gathering, client meetings, and project management,
+              while also contributing to the development and
+              implementation of software solutions. The project utilized
+              Python, Flask, Docker, and GitHub, managed through
+              Atlassian Jira.
+          </li>
+
+          <br><br>
+          <li>
+            <strong>Musical Equipment Loan System<br>  Faculty of Music, La Serena University (2023)
+            </strong><br>
+            
+            Conducted requirements gathering through client
+              interviews and developed a Python desktop application
+              for managing inventory, equipment status, and loan
+              tracking for students in music-related programs.
+          </li>
+
         </ul>
       `,
       proyectos: `
         <h2>Projects</h2>
         <ul>
-          <li>Prestressing calculation app – Python, PyQt, SQLite</li>
-          <li>Flask web platform – Docker, PostgreSQL</li>
+          <li> aa</li>
         </ul>
       `,
       habilidades: `
         <h2>Technical Skills</h2>
         <ul>
-          <li>Languages: C, Java, Python</li>
-          <li>Databases: PostgreSQL, MongoDB</li>
-          <li>Deployment: Docker, Vercel, AWS</li>
-          <li>Data Science: Pandas, NumPy, Scikit-Learn</li>
+          <li><b>Languages:</b> C, Java, Python</li>
+          <li><b>Databases:</b> PostgreSQL, MongoDB</li>
+          <li><b>Web Development:</b> HTML, CSS, JS, Flask framework</li>
+          <li><b>Version Control:</b> Git, Github, Github Integrations</li>
+          <li><b>Deployment and Hosting:</b> Vercel, NeonDB, AWS</li>
+          <li><b>Containerization:</b> Docker</li>
+          <li><b>Operating Systems:</b> Windows, MacOS, Linux</li>
+          <li><b>Project Management:</b> Atlassian Jira</li>
+          <li><b>Data Analysis and Machine Learning:</b> 
+            Jupyter Notebooks and Google Colab for data exploration,
+              cleaning, manipulation, and visualization using Pandas,
+              NumPy, Matplotlib, Seaborn, and Scikit-Learn.</li>
+
         </ul>
       `,
       certificaciones: `
         <h2>Certifications</h2>
-        <ul>
-          <li>CS50x – HarvardX (2024)</li>
-          <li>EF SET – C2 Proficient (2024)</li>
-        </ul>
+        <p>
+          <strong>CS50: Foundations of Intellectual
+            Enterprises of Computer Science and the
+            Art of Programming<br>  EdX | HarvardX (2024)</strong><br>
+
+          Comprehensive course covering data structures and
+            algorithms, relational databases, and programming in
+            C, Python, and SQL. Included web development using JS,
+            Bootstrap and Python Flask.<br>
+            Final project: Google Chrome extension.
+          </p>
+
+          <br><br>
+          <p>
+          <strong>EF: Standardized English Test Certificate
+            C2 Proficient<br>  EF SET (2024)</strong><br>
+
+          Achieved C2 Proficient level, demonstrating the ability
+            to communicate effectively and fluently in English
+            across a wide range of contexts.
+          </p>
       `,
       logros: `
         <h2>Achievements</h2>
-        <ul>
-          <li>3rd Place – Water Crisis Hackathon (Hydrocare, 2024)</li>
-          <li>Exhibitor – ULS Innovation Fair (2022)</li>
-        </ul>
+        <p>
+          <strong>3rd Place, Water Crisis Hackathon, Coquimbo Region.<br>  La Serena University (2024)</strong><br>
+
+          Hydrocare – IoT-based solution for monitoring crop
+            conditions and an AI model to identify plants affected
+            by pests.
+          </p>
+
+        <br><br>
+        <p>
+          <strong>Exhibitor – Innovation Fair ULS<br>  La Serena University (2022)</strong><br>
+
+          Developed a prototype of a wearable buzzer bracelet
+            using Arduino technology, along with 3D design and
+            printing for the device’s structure.
+        </p>
       `,
     },
   };
