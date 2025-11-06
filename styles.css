@@ -110,7 +110,7 @@ ul {
   margin-left: 20px;
 }
 
-/* --- MENÚ MÓVIL --- */
+/* Botón menú hamburguesa — visible solo en móviles */
 .menu-btn {
   display: none;
   position: absolute;
@@ -124,7 +124,9 @@ ul {
   padding: 6px 10px;
   z-index: 20;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
+
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {

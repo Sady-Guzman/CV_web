@@ -17,12 +17,12 @@ const tabLabels = {
   logros: document.getElementById("tab-logros"),
 };
 
-let lang = "es";
+// let lang = "en";
 
 // ---- CONTENIDO ----
 const texts = {
   es: {
-    subtitle: "Estudiante de Ingeniería en Computación",
+    subtitle: "Ingeniero en Computación",
     tabs: {
       contacto: "Contacto",
       formacion: "Formación",
@@ -34,24 +34,66 @@ const texts = {
     },
     contacto: `
       <h2>Contacto</h2>
-      <p><strong>Teléfono:</strong> +56 9 (número)</p>
-      <p><strong>Email:</strong> profesional@gmail.com</p>
-      <p><strong>LinkedIn:</strong> linkedin.com/in/mi-perfil</p>
-      <p><strong>Ubicación:</strong> La Serena, Chile</p>
-      <p>Estudiante de último año en Ingeniería en Computación. Experiencia en proyectos web, liderazgo de equipos y despliegue en la nube.</p>
+      <p><strong>Teléfono:</strong> +569 9128 9332</p>
+      <p><strong>Email:</strong> sady.guzman@userena.cl</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
+
+      <p><strong>Perfil:</strong> <br>Estudiante de quinto año, con perfil de egreso.<br>
+        Cuento con disponibilidad para incorporarme al trabajo
+        desde diciembre 2025, modalidad remota o presencial en
+        Región Metropolitana.</p>
+
       <a href="assets/SadyGuzman_CV_2025_esp.pdf" target="_blank" class="cv-button">📄 Descargar CV (PDF)</a>
     `,
     formacion: `
       <h2>Formación</h2>
       <p><strong>Ingeniería en Computación</strong> — Universidad de La Serena (2020 - 2025)</p>
-      <p>Énfasis en desarrollo backend, estructuras de datos, gestión de proyectos y liderazgo técnico.</p>
+      <p>Durante los primeros semestres el enfoque estuvo en los
+        fundamentos de la ciencia de la computación, usando
+        lenguaje C para entender en profundidad la lógica,
+        estructuras de datos y diseños de algoritmos.
+        Posteriormente la formación se basa en el desarrollo de
+        proyectos reales.<br><br>
+
+        Durante los últimos años, asumí el rol de jefe de proyecto
+        en varios de estos desarrollos semestrales, liderando
+        equipos de trabajo, levantamiento de requisitos,
+        entrevistas con clientes y gestionando la planificación y
+        ejecución de las etapas de desarrollo.
+        </p>
     `,
     experiencia: `
       <h2>Experiencia</h2>
       <ul>
-        <li><strong>Pasantía Profesional — PREANSA CHILE UNACEM (2025)</strong><br>Desarrollo de aplicación de escritorio en Python/PyQt con SQLite.</li>
-        <li><strong>Proyecto RH Hospital Coquimbo (2024)</strong><br>Liderazgo en limpieza y análisis de datos con Flask y Docker.</li>
-        <li><strong>Tutor de Programación — ULS (2025)</strong><br>Apoyo a estudiantes en fundamentos y estructuras de datos.</li>
+        <li><strong>Tutor de Ingeniería en Computación (2025)</strong><br>
+          Durante mi último año, me desempeñé como tutor de
+          programación, apoyando a estudiantes de primer año
+          en asignaturas de introducción a la programación, y a
+          estudiantes de segundo año en estructuras de datos.</li>
+
+        <li><strong>Práctica Profesional - PREANSA CHILE UNACEM (2025) </strong><br>
+          Desarrollo de una aplicación de escritorio utilizando
+          Python, el framework PyQt y una base de datos SQLite,
+          destinada a realizar cálculos de propiedades de piezas
+          de hormigón pretensado.</li>
+
+        <li><strong>Proyecto plataforma web escuela de Computación - Universidad de la Serena (2025)</strong><br>
+          Me desempeñe como jefe de proyecto en desarrollo de
+          plataforma web. Administré el desarrollo de equipos de
+          frontend, backend, base de datos, QA, y Devops.</li>
+        
+        <li><strong>Proyecto de Depuración de marcajes RRHH MINSAL - Hospital de Coquimbo (2024)</strong><br>
+          Encargado del levantamiento de requisitos, reuniones
+          con cliente y gestión de proyecto, como también apoyo
+          en etapas desarrollo. Abordamos tecnologías como
+          Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.</li>
+
+        <li><strong>Proyecto de Sistema de préstamos de equipos musicales - Universidad de La Serena (2023)</strong><br>
+          Encargado del levantamiento de requisitos, reuniones
+          con cliente y gestión de proyecto, como también apoyo
+          en etapas desarrollo. Abordamos tecnologías como
+          Atlassian Jira, Python, MongoDB, Flask, Docker, y GitHub.</li>
+
       </ul>
     `,
     proyectos: `
@@ -86,7 +128,7 @@ const texts = {
     `,
   },
   en: {
-    subtitle: "Computer Engineering Student",
+    subtitle: "Software Engineer",
     tabs: {
       contacto: "Contact",
       formacion: "Education",
@@ -179,11 +221,22 @@ tabs.forEach((tab) => {
     tab.classList.add("active");
     setContent(tab.dataset.section);
 
-    // cerrar sidebar y overlay en móvil
     sidebar.classList.remove("open");
     overlay.classList.remove("visible");
-    menuBtn.style.display = "block"; // volver a mostrar botón
+
+    if (window.innerWidth <= 768) {
+      menuBtn.style.display = "block"; // solo en móvil
+    }
   });
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("open");
+  overlay.classList.remove("visible");
+
+  if (window.innerWidth <= 768) {
+    menuBtn.style.display = "block";
+  }
 });
 
 btnEs.addEventListener("click", () => switchLang("es"));
@@ -192,12 +245,15 @@ btnEn.addEventListener("click", () => switchLang("en"));
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
 
-  if (sidebar.classList.contains("open")) {
-    overlay.classList.add("visible");   // mostrar fondo oscuro
-    menuBtn.style.display = "none";     // ocultar botón hamburguesa
-  } else {
-    overlay.classList.remove("visible"); // ocultar fondo
-    menuBtn.style.display = "block";
+  // solo aplicar estos cambios si es móvil
+  if (window.innerWidth <= 768) {
+    if (sidebar.classList.contains("open")) {
+      overlay.classList.add("visible");   // mostrar fondo oscuro
+      menuBtn.style.display = "none";     // ocultar botón hamburguesa
+    } else {
+      overlay.classList.remove("visible"); // ocultar fondo
+      menuBtn.style.display = "block";     // volver a mostrar botón
+    }
   }
 });
 
@@ -209,5 +265,13 @@ overlay.addEventListener("click", () => {
 });
 
 // ---- Inicialización ----
-updateLanguageUI();
-setContent("contacto");
+// VERSION ESP DEFECTO
+// updateLanguageUI();
+// setContent("contacto");
+
+// ENG defecto
+lang = "es";          // idioma por defecto
+updateLanguageUI();   // actualiza etiquetas y subtítulo
+setContent("contacto"); // carga la pestaña "Contact"
+btnEs.classList.remove("active");
+btnEn.classList.add("active");
