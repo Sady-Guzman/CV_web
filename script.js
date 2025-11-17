@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="assets/SadyGuzman_CV_2025_en.pdf" target="_blank" class="cv-button">📄 Download CV (PDF)</a>
         <br><br><br>
         <h1>ENCUESTA DII2<h1>
-        <a href="https://forms.gle/it7efeeYfvGE26JN8">LINK A ENCUESTA</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzB5kyLWAC0lLft9_bsVgWsX-YCFXPv4lNJkOjIVZWVYCm0A/viewform?usp=dialog">LINK A ENCUESTA</a>
       `,
       formacion: `
         <h2>Education</h2>
