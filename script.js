@@ -208,8 +208,7 @@ como jefe de proyecto.</p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
         <p><strong>Location:</strong>Chile</p>
 
-        <p><strong>Profile:</strong> <br>Computer
-Engineering
+        <p><strong>Profile:</strong> <br>Computer Science
 graduate
 with
 hands-on
@@ -221,7 +220,7 @@ leadership as a project lead.</p>
       `,
       formacion: `
         <h2>Education</h2>
-        <p><strong>Ingeniería en Computación<br>  Universidad de La Serena (2020 - 2025)</strong></p>
+        <p><strong>Computer Science<br>  Universidad de La Serena (2020 - 2025)</strong></p>
         <p>
           During the first semesters, the focus was on the
           fundamentals of computer science, using the C
