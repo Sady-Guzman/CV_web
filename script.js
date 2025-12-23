@@ -41,10 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
         <p><strong>Idiomas:</strong> Español, Ingles C2</p>
 
-        <p><strong>Perfil:</strong> <br>Estudiante de quinto año, con perfil de egreso.<br>
-          Cuento con disponibilidad para incorporarme al trabajo
-          desde diciembre 2025, modalidad remota o presencial en
-          Región Metropolitana.</p>
+        <p><strong>Perfil:</strong> <br>Ingeniero en Computación titulado, con experiencia en
+desarrollo de proyectos de software y roles de liderazgo
+como jefe de proyecto.</p>
 
         <a href="assets/SadyGuzman_CV_2025_esp.pdf" target="_blank" class="cv-button">📄 Descargar CV (PDF)</a>
       `,
