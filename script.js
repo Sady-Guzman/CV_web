@@ -208,9 +208,13 @@ como jefe de proyecto.</p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sady-guzman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sady-guzman/</a></p>
         <p><strong>Location:</strong>Chile</p>
 
-        <p><strong>Profile:</strong> <br>Final-year Computer Engineering student, currently
-          completing degree requirements. <br>
-          Available to start working from December 2025.</p>
+        <p><strong>Profile:</strong> <br>Computer
+Engineering
+graduate
+with
+hands-on
+experience in software development projects and team
+leadership as a project lead.</p>
         
         
         <a href="assets/SadyGuzman_CV_2025_en.pdf" target="_blank" class="cv-button">📄 Download CV (PDF)</a>
